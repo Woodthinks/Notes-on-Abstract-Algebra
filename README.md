@@ -7,3 +7,5 @@
 近世代数学习笔记:
 
 24.2.28 Create 2.26.md (not finished)
+
+24.2.28 finished 2.26.md
