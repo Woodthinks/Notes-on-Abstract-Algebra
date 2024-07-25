@@ -3,7 +3,7 @@
 
 # Chapter 2: Groups
 
-### V Normal Subgroups and Cosets
+### V Normal Subgroups
 
 Consider $\phi = sgn:S_3\to \{\pm1\}^{\times}$. (Notation as $x = (1,2,3)$ and $y = (1,2)$)
 $K = \ker \phi = \{1,(1,2,3),(1,3,2)\}\mapsto 1$. $yK = \{(1,2),(1,3),(2,3)\}\mapsto -1$.
