@@ -13,3 +13,8 @@ Motivation:
 - Bijeection between fibers and elements in image: $\phi: G\to G'$ is a group homomorphism with $\ker \phi = K$. Then $\{\text{fibers}\}(G/K)\overset{\text{bijection}}{\longleftrightarrow} \text{im }\phi\leq G'(aK\leftrightarrow\phi(a))$.
 
 The group structure on $G/K$ may be inducted by the group structure on $\text{im } \phi$ i.e. $aK \cdot bK = (ab)K$. e.g. $\phi = \text{sgn }: S_3\to\{\pm 1\}^{\times}$, $K = \{1\}, yK = \{-1\}$. (Elements $\to$ product of elements)
+
+Theorem (with definition): Suppose $N\trianglelefteq G$, $\exists$ a law of composition on $G/N$ that makes it a group (called quotient group) s.t. the quotient mapping $\pi: G\to G/N(a\mapsto aN)$ is a group homomorphism with $\ker \pi = N$.
+
+Proof: Need to show:
+- Give out a definition on $G/N \times G/N \to G/N$
