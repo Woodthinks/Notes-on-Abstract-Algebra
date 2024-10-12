@@ -29,4 +29,6 @@ For (I), define $aN\times bN = (ab)N$. Then we show a lemma: The definiton follo
 Identity: $aN \cdot 1N = 1N\cdot aN = aN$. \
 Inverse: $aN \cdot (a^{-1})N = a^{-1}N \cdot aN = 1N$.\
 Before proving the last two, we first come up with a proposition:\
-Proposition (Mapping property of quotient groups): Given $N\trianglelefteq G, \pi: G\to G/N$.
+Proposition (Mapping property of quotient groups): Given $N\trianglelefteq G, \pi: G\to G/N$ (the quotient homomorphism). Suppose $\phi:G\to G'$ is a group homomorphism with $\phi(N) = 1_{G'}(N\leq \ker \phi)$. Then $\exists$ group homomorphism $\bar \phi: G/N \to G'$ s.t. $\phi = \bar \phi \circ\pi $.
+
+Proof: Define $\bar \phi(aN) = \phi(a)$, which is the only way that makes $\phi = \bar \phi \circ\pi $.
