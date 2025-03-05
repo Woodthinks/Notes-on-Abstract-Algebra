@@ -24,7 +24,7 @@ Define: Projection mapping: $G \overset{p}{\leftarrow}G\times G'\overset{p'}{\ri
 
 Exercise: Mapping property for $G\times G'$:
 
-$\forall$ group $H,G,G'$, if $\phi:H\to G,\phi': H\to G'$. Then $\exists \Phi: H\to G\times G', \phi = p\circ \Phi, \phi' = p' \circ \Phi$.
+$\forall$ group $H,G,G'$, if $\varphi:H\to G,\varphi': H\to G'$. Then $\exists \varphi: H\to G\times G', \varphi = p\circ \varphi, \varphi' = p' \circ \varphi$.
 
 Inclusion mapping: $G \overset{i}{\rightarrow}G\times G'\overset{i'}{\leftarrow}G': a\to (a,1_{G'}),a'\to(1_G,a')$. The inclusion mapping $i$ is injective group homomorphism with images $G\times \{1_{G'}\}$ ($i'$ with $\{1_{G}\}\times G'$).
 
@@ -50,6 +50,11 @@ Proposition $|G| = 4$, either $G\cong C_4$ or $G\cong C_2\times C_2$(Klein four 
 
 ​	Case $2$: $\forall x \in G, x\not = 1, |x| = 2$. Then $\exists y\not = z, |y| = |z| = 2.$ $H = \langle y \rangle, K = \langle z\rangle$, $H\cap K = \{1\}$, $HK = \{1,y,z,yz\} = G$, $[G:H] = [G:K]=2\Rightarrow H\trianglelefteq G, K\trianglelefteq G$. So $G\cong H\times K \cong C_2\times C_2$.
 
-Remark: Note that $G' \overset{i'}{\rightarrow}G'\times G''\overset{p''}{\to}G''$ satisfies $i'$ is an injective group homomorphism, $p''$ is a surjective group homomorphism, which infers $\ker p'' = \text{im } i' = G'\times 1$. More generally, $H\overset{g}{\to} G \overset{f}{\to} K$ that satisfies $g$ is an injective group homomorphism, $f$ is a surjective group homomorphism, $\ker f = \text{im }g$ is called a short exact sequence. (s.e.s), denoted by $1\to H\to G \to K\to 1$.
+Remark: Note that $G' \overset{i'}{\rightarrow}G'\times G''\overset{p''}{\to}G''$ satisfies $i'$ is an injective group homomorphism, $p''$ is a surjective group homomorphism, which infers $\ker p'' = \text{im } i' = G'\times 1$.    
+More generally, short exact sequence can be used to describle such situation. A sequence of group homomorphisms: $1 \to H \xrightarrow{\iota} G \xrightarrow{\pi} K \to 1$  is called a **short exact sequence**(s.e.s) if:
+1. $\iota$ is injective,  
+2. $\pi$ is surjective,  
+3. $\ker \pi = \operatorname{im} \iota$.  
 
-Example: $S_3\not \cong C_2\times C_3$, but exists s.e.s $1\to C_3\to S_3\to C_2 \to 1$.
+Example: $S_3\not \cong C_2\times C_3$, but exists s.e.s $1\to C_3\to S_3\to C_2 \to 1$.    
+In fact, for a normal subgroup $H \trianglelefteq G$, the sequence: $1 \to H \to G \to G/H \to 1$ is exact. 
