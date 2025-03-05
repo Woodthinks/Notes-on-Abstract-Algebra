@@ -29,14 +29,14 @@ Corollary: $G$ is a finite group, $x\in G$, then $|x| \mid |G|$. ($\langle x\ran
 
 Let $G\to G'$ be a group homomorphism of finite groups:
 
-- $|G| = |\ker \phi| \cdot |\text{im} \phi|$.
-- $|\ker \phi|$ divides $|G|$, and 
-- $|\text{im} \phi|$ divides both $|G|$ and $|G'|$.
+- $|G| = |\ker \varphi| \cdot |\text{im} \varphi|$.
+- $|\ker \varphi|$ divides $|G|$, and 
+- $|\text{im} \varphi|$ divides both $|G|$ and $|G'|$.
 
 Proof:
-By Counting Formula, $|G| = [G:\ker \phi] |\ker\phi|$.
-Construct a bijection between cosets of $\ker \phi$(fibers) and $\text{im} \phi$: $aK\leftrightarrow \phi(a)$
-The bijection is well-defined: Denote $K=\ker \phi, aK = a'K\Leftrightarrow a = a'k,\exists k\in K\Leftrightarrow \phi(a) = \phi(a'k) = \phi(a')\phi(k) = \phi(a')\Leftrightarrow aK = a'K\Leftrightarrow \phi(a) = \phi(a').$ 
+By Counting Formula, $|G| = [G:\ker \varphi] |\ker\varphi|$.
+Construct a bijection between cosets of $\ker \varphi$(fibers) and $\text{im} \varphi$: $aK\leftrightarrow \varphi(a)$
+The bijection is well-defined: Denote $K=\ker \varphi, aK = a'K\Leftrightarrow a = a'k,\exists k\in K\Leftrightarrow \varphi(a) = \varphi(a'k) = \varphi(a')\varphi(k) = \varphi(a')\Leftrightarrow aK = a'K\Leftrightarrow \varphi(a) = \varphi(a').$ 
 
 Proposition: If $K\leq H\leq G$, $[G:K] = [G:H][H:K]$.
 E.g. If $H\leq S_n$ satisfies $|H|$ is odd, then $H\leq A_n$. ($\text{sgn}(H)$ divides $|H|\Rightarrow \text{sgn}(H)=1$)

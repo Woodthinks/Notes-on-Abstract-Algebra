@@ -5,19 +5,19 @@
 
 ### V Normal Subgroups
 
-Consider $\phi = sgn:S_3\to \{\pm1\}^{\times}$. (Notation as $x = (1,2,3)$ and $y = (1,2)$)
-$K = \ker \phi = \{1,(1,2,3),(1,3,2)\}\mapsto 1$. $yK = \{(1,2),(1,3),(2,3)\}\mapsto -1$.
+Consider $\varphi = sgn:S_3\to \{\pm1\}^{\times}$. (Notation as $x = (1,2,3)$ and $y = (1,2)$)
+$K = \ker \varphi = \{1,(1,2,3),(1,3,2)\}\mapsto 1$. $yK = \{(1,2),(1,3),(2,3)\}\mapsto -1$.
 
-Question: Can we use the "right coset" of $K = \ker \phi$ to describe fibers of $\phi$?
+Question: Can we use the "right coset" of $K = \ker \varphi$ to describe fibers of $\varphi$?
 
 A naive trial: $Ky = \{(1,2),(1,3),(2,3)\} = yK$. $\forall k\in K, \exists k'\in K,$ s.t. $yK = k'y$.
-For $K=\ker \phi$, we have $Ky = yK$. (Reason: $\forall k\in K,\exists k'\in K$ s.t. $yk = k'y$ i.e. $\forall k \in K, yky^{-1}\in K$.)
+For $K=\ker \varphi$, we have $Ky = yK$. (Reason: $\forall k\in K,\exists k'\in K$ s.t. $yk = k'y$ i.e. $\forall k \in K, yky^{-1}\in K$.)
 
 Definition: We say $N\leq G$ is a normal subgroup ($N\trianglelefteq  G$) if $\forall a \in N \forall g \in G, gag^{-1}\in N$. $gag^{-1}$ are called conjugate of $a$ by $g$.
 
-Proposition: $\forall \phi: G\to G'$ which is a group homomorphism, $\ker\phi$ is a normal subgroup of $G$.
+Proposition: $\forall \varphi: G\to G'$ which is a group homomorphism, $\ker\varphi$ is a normal subgroup of $G$.
 
-Proof: $\ker \phi\leq G$ is obvious. And $\forall k\in K = \ker \phi, g\in G,\phi(gkg^{-1}) = \phi(g)\phi(k)\phi(g^{-1}) = \phi(g)1_G\phi(g)^{-1} = 1_G$, which implies $gkg^{-1}\in K$.
+Proof: $\ker \varphi\leq G$ is obvious. And $\forall k\in K = \ker \varphi, g\in G,\varphi(gkg^{-1}) = \varphi(g)\varphi(k)\varphi(g^{-1}) = \varphi(g)1_G\varphi(g)^{-1} = 1_G$, which implies $gkg^{-1}\in K$.
 
 Some examples of normal subgroups:
 
@@ -38,16 +38,16 @@ Example: $Z(GL_n(\mathbb R)) = \{\lambda I|\lambda\in \mathbb R^*\}$, $Z(S_3) = 
 
 Another way to describe the "commutative level" of two elements $a,b$ is the commutator, defined as $aba^{-1} b^{-1}$. $ab = ba$ if and only if $aba^{-1} b^{-1}=1$.
 
-Remark: The conjugate :$\phi_g: G\to G,\phi(a) = gag^{-1}$ is an automorphism (an isomorphism from $G$ to $G$ self).
+Remark: The conjugate :$\varphi_g: G\to G,\varphi(a) = gag^{-1}$ is an automorphism (an isomorphism from $G$ to $G$ self).
 
-- $\phi_g$ is a homorphism ($\phi_g(x)\phi_g(y) = gxg^{-1}gyg^{-1} = g(xy)g^{-1} = \phi_g(xy)$)
-- $\phi_g$ has a inverse $\phi_g^{-1}$: $\phi_g^{-1}(x) = g^{-1}xg$ ($\phi_g\circ \phi_g^{-1} = \phi_g^{-1}\circ \phi_g = i$) so $\phi_g$ is bijective.
+- $\varphi_g$ is a homorphism ($\varphi_g(x)\varphi_g(y) = gxg^{-1}gyg^{-1} = g(xy)g^{-1} = \varphi_g(xy)$)
+- $\varphi_g$ has a inverse $\varphi_g^{-1}$: $\varphi_g^{-1}(x) = g^{-1}xg$ ($\varphi_g\circ \varphi_g^{-1} = \varphi_g^{-1}\circ \varphi_g = i$) so $\varphi_g$ is bijective.
 
 Fibers as equivalent classes:
-$\phi: G\to G'$ is a group homomorphism. $K=\ker\phi \trianglelefteq G$. Consider the mapping. Observe that:
+$\varphi: G\to G'$ is a group homomorphism. $K=\ker\varphi \trianglelefteq G$. Consider the mapping. Observe that:
 
-- $G= \bigsqcup(\text{disjoint})$(nonempty) fibers of $\phi$ (a partition): $\{\text{(nonempty) fibers of }\phi\}\overset{\text{bijection}}{\longleftrightarrow}\text{im } \phi$.
-- The fibers over $\phi(a) = aK$, $|aK| = |K|$.
+- $G= \bigsqcup(\text{disjoint})$(nonempty) fibers of $\varphi$ (a partition): $\{\text{(nonempty) fibers of }\varphi\}\overset{\text{bijection}}{\longleftrightarrow}\text{im } \varphi$.
+- The fibers over $\varphi(a) = aK$, $|aK| = |K|$.
 
 Recall how to define an equivalence relation: A relation $R\subset S\times S$ is an equivalence relation if it satisfies:
 

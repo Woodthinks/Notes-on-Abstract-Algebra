@@ -106,7 +106,7 @@ $\mathbb F_p$ is an example of finite fields.
 
 By Lagrange's Theorem, we know that $\forall 1\leq a<p,|\bar a|$ divides $|(\mathbb{Z}/p\mathbb{Z})^*| = p-1 \Rightarrow (\bar a)^{p-1} = \bar 1\Rightarrow a^{p-1} \equiv 1(\text{mod }p)$. (Together with $a = np$, we get $a^p \equiv a (\text{mod } p)$.This is also called the Fermat's Little Theorem).
 
-Insight: When it comes to a general $n$($n$ may not be prime.) $|(\mathbb{Z}/p\mathbb{Z})^*|$ is equal to the number of those which is relatively prime to $n$, also denoted as $\phi(n)$(The Euler's function), Then it can be generalized into The Euler's Theorem: $\forall a \text{ s.t. }\gcd(a,n) = 1,a^{\phi(n)} \equiv 1(\text{mod }n)$.
+Insight: When it comes to a general $n$($n$ may not be prime.) $|(\mathbb{Z}/p\mathbb{Z})^*|$ is equal to the number of those which is relatively prime to $n$, also denoted as $\varphi(n)$(The Euler's function), Then it can be generalized into The Euler's Theorem: $\forall a \text{ s.t. }\gcd(a,n) = 1,a^{\varphi(n)} \equiv 1(\text{mod }n)$.
 
 Another example (Wilson's Theorem): If $p$ is prime, then $(p-1)!\equiv -1(\text{mod }p)$.
 
